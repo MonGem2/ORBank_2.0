@@ -11,11 +11,14 @@ namespace ORBank_2._0
     public class Bank
     {
         public Users Users { get; set; } = new Users();
+        public Wallet Bank_Moneys { get; set; } = new Wallet(10000000);
     }
 
     [Serializable]
     public class Users : BindingList<User>
     {
+
+
 
     }
 }

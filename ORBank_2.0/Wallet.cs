@@ -10,10 +10,23 @@ namespace ORBank_2._0
     public class Wallet
     {
         public decimal Moneys { get; private set; }
-
+        public bool Refill(decimal ref_)
+        {
+            if (ref_ > 0)
+            {
+                Moneys += ref_;
+                return true;
+            }
+            return false;
+        }
         public Wallet(decimal Money)
         {
             Moneys = Money;
+        }
+
+        public void Subtract(decimal sum)
+        {
+            Moneys -= sum;
         }
 
         public decimal Get_Wallet()
@@ -23,7 +36,7 @@ namespace ORBank_2._0
 
         public override string ToString()
         {
-            return ((int)Moneys).ToString();
+            return (Moneys).ToString();
         }
     }
 }

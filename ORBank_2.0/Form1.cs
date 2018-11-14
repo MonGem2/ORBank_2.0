@@ -48,20 +48,25 @@ namespace ORBank_2._0
             }
         }
 
-        void listOfParts_ListChanged(object sender, ListChangedEventArgs e)
+        void ListOfParts_ListChanged(object sender, ListChangedEventArgs e)
         {
             Bank_Serialize();
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
-            bank.Users.ListChanged += new ListChangedEventHandler(listOfParts_ListChanged);
             if (metroTextBox1.Text == @"admin\" && metroTextBox2.Text == "qwerty")
             {
-                Admin form = new Admin(bank.Users);
+                Visible = false;
+                var tmpUsers = bank.Users;
+                Admin form = new Admin(ref tmpUsers);
+                bank.Users = tmpUsers;
                 metroTextBox1.Text = "";
                 metroTextBox2.Text = "";
                 form.ShowDialog(this);
+                bank.Users = form.Users;
+                Bank_Serialize();
+                Visible = true;
             }
             else
             {
@@ -78,21 +83,39 @@ namespace ORBank_2._0
                         errorProvider1.Clear();
                         errorProvider1.SetError(metroTextBox2, "Incorrect password");
                     }
-                    else { errorProvider1.Clear(); MessageBox.Show($"Hello {tmp.Name}"); metroTextBox1.Text = ""; metroTextBox2.Text = ""; }
+                    else {
+                        errorProvider1.Clear();
+                        Visible = false;
+                        var tmpUsers = bank.Users;
+                        Main loged = new Main(ref tmpUsers, bank.Users.IndexOf(bank.Users.Where(a => a.LogIn == metroTextBox1.Text).First()));
+                        bank.Users = tmpUsers;
+                        metroTextBox1.Text = "";
+                        metroTextBox2.Text = "";
+                        loged.ShowDialog(this);
+                        bank.Users = loged.Users;
+                        Visible = true;
+                    }
                 }
                 catch { errorProvider1.SetError(metroTextBox1, "This user not exist"); }
             }
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void MetroButton2_Click(object sender, EventArgs e)
         {
+            bank.Users.ListChanged += new ListChangedEventHandler(ListOfParts_ListChanged);
             metroTextBox1.Text = "";
             metroTextBox2.Text = "";
+            Visible = false;
             User tmp = User.Create(bank.Users.Count, bank.Users);
             if (tmp != null)
             {
-                bank.Users.Add(tmp);
+                bank.Bank_Moneys.Subtract(tmp.wallet.Moneys);
+                if (tmp != null)
+                {
+                    bank.Users.Add(tmp);
+                }
             }
+            Visible = true;
         }
     }
 }

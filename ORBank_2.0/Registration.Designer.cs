@@ -46,16 +46,18 @@
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTextBox1
             // 
-            this.metroTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTextBox1.BackColor = System.Drawing.Color.LightCyan;
             // 
             // 
             // 
@@ -69,7 +71,7 @@
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(45, 44);
+            this.metroTextBox1.Location = new System.Drawing.Point(95, 44);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
@@ -89,7 +91,7 @@
             // 
             // metroTextBox2
             // 
-            this.metroTextBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTextBox2.BackColor = System.Drawing.Color.LightCyan;
             // 
             // 
             // 
@@ -103,7 +105,7 @@
             this.metroTextBox2.CustomButton.UseSelectable = true;
             this.metroTextBox2.CustomButton.Visible = false;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(45, 92);
+            this.metroTextBox2.Location = new System.Drawing.Point(95, 92);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
             this.metroTextBox2.PasswordChar = '\0';
@@ -123,7 +125,7 @@
             // 
             // metroTextBox3
             // 
-            this.metroTextBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTextBox3.BackColor = System.Drawing.Color.LightCyan;
             // 
             // 
             // 
@@ -137,7 +139,7 @@
             this.metroTextBox3.CustomButton.UseSelectable = true;
             this.metroTextBox3.CustomButton.Visible = false;
             this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(45, 137);
+            this.metroTextBox3.Location = new System.Drawing.Point(95, 137);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
             this.metroTextBox3.PasswordChar = '\0';
@@ -157,12 +159,12 @@
             // 
             // metroTextBox4
             // 
-            this.metroTextBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTextBox4.BackColor = System.Drawing.Color.LightCyan;
             // 
             // 
             // 
             this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(93, 1);
+            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(89, 1);
             this.metroTextBox4.CustomButton.Name = "";
             this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -171,7 +173,7 @@
             this.metroTextBox4.CustomButton.UseSelectable = true;
             this.metroTextBox4.CustomButton.Visible = false;
             this.metroTextBox4.Lines = new string[0];
-            this.metroTextBox4.Location = new System.Drawing.Point(45, 182);
+            this.metroTextBox4.Location = new System.Drawing.Point(99, 182);
             this.metroTextBox4.MaxLength = 32767;
             this.metroTextBox4.Name = "metroTextBox4";
             this.metroTextBox4.PasswordChar = '\0';
@@ -180,7 +182,7 @@
             this.metroTextBox4.SelectionLength = 0;
             this.metroTextBox4.SelectionStart = 0;
             this.metroTextBox4.ShortcutsEnabled = true;
-            this.metroTextBox4.Size = new System.Drawing.Size(115, 23);
+            this.metroTextBox4.Size = new System.Drawing.Size(111, 23);
             this.metroTextBox4.TabIndex = 3;
             this.metroTextBox4.UseCustomBackColor = true;
             this.metroTextBox4.UseCustomForeColor = true;
@@ -191,12 +193,12 @@
             // 
             // metroTextBox5
             // 
-            this.metroTextBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.metroTextBox5.BackColor = System.Drawing.Color.LightCyan;
             // 
             // 
             // 
             this.metroTextBox5.CustomButton.Image = null;
-            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(93, 1);
+            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(77, 1);
             this.metroTextBox5.CustomButton.Name = "";
             this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -205,7 +207,7 @@
             this.metroTextBox5.CustomButton.UseSelectable = true;
             this.metroTextBox5.CustomButton.Visible = false;
             this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(45, 230);
+            this.metroTextBox5.Location = new System.Drawing.Point(123, 230);
             this.metroTextBox5.MaxLength = 32767;
             this.metroTextBox5.Name = "metroTextBox5";
             this.metroTextBox5.PasswordChar = '\0';
@@ -214,7 +216,7 @@
             this.metroTextBox5.SelectionLength = 0;
             this.metroTextBox5.SelectionStart = 0;
             this.metroTextBox5.ShortcutsEnabled = true;
-            this.metroTextBox5.Size = new System.Drawing.Size(115, 23);
+            this.metroTextBox5.Size = new System.Drawing.Size(99, 23);
             this.metroTextBox5.TabIndex = 4;
             this.metroTextBox5.UseCustomBackColor = true;
             this.metroTextBox5.UseCustomForeColor = true;
@@ -225,11 +227,11 @@
             // 
             // metroLabel1
             // 
-            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(77, 22);
+            this.metroLabel1.Location = new System.Drawing.Point(9, 44);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(49, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(51, 19);
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "Name";
             this.metroLabel1.UseCustomBackColor = true;
@@ -238,11 +240,11 @@
             // 
             // metroLabel2
             // 
-            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.Location = new System.Drawing.Point(66, 70);
+            this.metroLabel2.Location = new System.Drawing.Point(9, 92);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(68, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(70, 19);
             this.metroLabel2.TabIndex = 6;
             this.metroLabel2.Text = "Surname";
             this.metroLabel2.UseCustomBackColor = true;
@@ -251,11 +253,11 @@
             // 
             // metroLabel3
             // 
-            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.Location = new System.Drawing.Point(77, 118);
+            this.metroLabel3.Location = new System.Drawing.Point(9, 141);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(46, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(48, 19);
             this.metroLabel3.TabIndex = 7;
             this.metroLabel3.Text = "Login";
             this.metroLabel3.UseCustomBackColor = true;
@@ -264,11 +266,11 @@
             // 
             // metroLabel4
             // 
-            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.Location = new System.Drawing.Point(64, 163);
+            this.metroLabel4.Location = new System.Drawing.Point(4, 182);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(73, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(75, 19);
             this.metroLabel4.TabIndex = 8;
             this.metroLabel4.Text = "Password";
             this.metroLabel4.UseCustomBackColor = true;
@@ -277,20 +279,21 @@
             // 
             // metroLabel5
             // 
-            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel5.Location = new System.Drawing.Point(52, 208);
+            this.metroLabel5.Location = new System.Drawing.Point(4, 230);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(107, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(113, 19);
             this.metroLabel5.TabIndex = 9;
-            this.metroLabel5.Text = "Phone number";
+            this.metroLabel5.Text = "Phone \r\nnumber";
             this.metroLabel5.UseCustomBackColor = true;
             this.metroLabel5.UseCustomForeColor = true;
             this.metroLabel5.UseStyleColors = true;
             // 
             // metroButton1
             // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.metroButton1.BackColor = System.Drawing.Color.Teal;
+            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.Location = new System.Drawing.Point(31, 259);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(141, 34);
@@ -300,7 +303,7 @@
             this.metroButton1.UseCustomForeColor = true;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.UseStyleColors = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.metroButton1.Click += new System.EventHandler(this.MetroButton1_Click);
             // 
             // errorProvider1
             // 
@@ -322,12 +325,24 @@
             // 
             this.errorProvider5.ContainerControl = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ORBank_2._0.Properties.Resources.K6x;
+            this.pictureBox1.InitialImage = global::ORBank_2._0.Properties.Resources.K6x;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(245, 305);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(208, 305);
+            this.ClientSize = new System.Drawing.Size(245, 305);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel4);
@@ -339,18 +354,20 @@
             this.Controls.Add(this.metroTextBox3);
             this.Controls.Add(this.metroTextBox2);
             this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Registration_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -372,5 +389,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.ErrorProvider errorProvider5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

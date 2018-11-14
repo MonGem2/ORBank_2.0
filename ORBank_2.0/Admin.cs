@@ -13,16 +13,21 @@ namespace ORBank_2._0
 {
     public partial class Admin : Form
     {
-        Users Users { get; set; } = new Users();
+        public Users Users { get; set; } = new Users();
         public Admin()
         {
             InitializeComponent();
         }
 
-        public Admin(Users users)
+        public Admin(ref Users users)
         {
             InitializeComponent();
             Users = users;
+            UpdateDataGrid();
+        }
+
+        public void UpdateDataGrid()
+        {
             dataGridView1.DataSource = Users;
         }
 
@@ -32,14 +37,27 @@ namespace ORBank_2._0
             
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void MetroButton2_Click(object sender, EventArgs e)
         {
             User tmp = User.Create(Users.Count, Users);
             if (tmp != null)
             {
                 Users.Add(tmp);
             }
-            dataGridView1.DataSource = Users;
+            UpdateDataGrid();
+        }
+
+        private void MetroButton3_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            try
+            {
+                i = dataGridView1.Rows.IndexOf(dataGridView1.SelectedRows[0]);
+                Users.RemoveAt(i);
+                UpdateDataGrid();
+            }
+            catch
+            { }
         }
     }
 }

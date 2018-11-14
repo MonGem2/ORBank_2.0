@@ -27,7 +27,7 @@ namespace ORBank_2._0
 
         public static User Create(Int64 UsersNum,Users users)
         {
-            User newUser = new User();
+            User newUser = null;
             Registration reg = new Registration(users);
             reg.ShowDialog();
             if (reg.Done)

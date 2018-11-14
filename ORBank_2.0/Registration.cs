@@ -27,23 +27,26 @@ namespace ORBank_2._0
         {
             Random rnd = new Random();
             User newUser = new User();
-            newUser.Name = metroTextBox1.Text;
-            newUser.SurName = metroTextBox2.Text;
-            newUser.Password = metroTextBox4.Text;
-            newUser.LogIn = metroTextBox3.Text;
-            newUser.Phone_Number = metroTextBox5.Text;
-            for (int i = 0; i < 16 - UsersNum.ToString().Count(); i++)
+            if (metroTextBox1.Text != string.Empty && metroTextBox2.Text != string.Empty && metroTextBox3.Text != string.Empty && metroTextBox4.Text != string.Empty && metroTextBox5.Text != string.Empty)
             {
-                newUser.CardNum += "0";
+                newUser.Name = metroTextBox1.Text;
+                newUser.SurName = metroTextBox2.Text;
+                newUser.Password = metroTextBox4.Text;
+                newUser.LogIn = metroTextBox3.Text;
+                newUser.Phone_Number = metroTextBox5.Text;
+                for (int i = 0; i < 16 - UsersNum.ToString().Count(); i++)
+                {
+                    newUser.CardNum += "0";
+                }
+                newUser.CardNum += (UsersNum + 1).ToString();
+                newUser.PINcode = rnd.Next(9).ToString() + rnd.Next(9).ToString() + rnd.Next(9).ToString() + rnd.Next(9).ToString();
+                newUser.wallet = new Wallet(300);
+                MessageBox.Show($"Your card number:{newUser.CardNum}\nPin:{newUser.PINcode}");
             }
-            newUser.CardNum += (UsersNum+1).ToString();
-            newUser.PINcode = rnd.Next(9).ToString() + rnd.Next(9).ToString() + rnd.Next(9).ToString() + rnd.Next(9).ToString();
-            newUser.wallet = new Wallet(300);
-            MessageBox.Show($"Your card number:{newUser.CardNum}\nPin:{newUser.PINcode}");
             return newUser;
         }
 
-        bool Correct()
+        bool IsCorrect()
         {
             string LogPattern = @"^[A-Za-z]\w{5,15}$";
             string NamePattern = @"^[A-Z][a-z]{1,15}$";
@@ -58,7 +61,7 @@ namespace ORBank_2._0
             Regex reg = new Regex(LogPattern);
             if (!reg.IsMatch(metroTextBox3.Text))
             {
-                errorProvider3.SetError(metroTextBox3, "6-16 letters and numbers");
+                errorProvider3.SetError(metroTextBox3, "6-16 letters and numbers(first is letter)");
                 LoginCorrect = false;
             }
             else if (Users.Count != 0)
@@ -73,7 +76,7 @@ namespace ORBank_2._0
             else { errorProvider3.Clear(); }
             if (!reg.IsMatch(metroTextBox4.Text))
             {
-                errorProvider4.SetError(metroTextBox4, "6-16 letters and numbers");
+                errorProvider4.SetError(metroTextBox4, "6-16 letters and numbers(first is letter)");
                 PassCorrect = false;
             }
             else { errorProvider4.Clear(); }
@@ -104,13 +107,18 @@ namespace ORBank_2._0
             return false;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
-            if (Correct())
+            if (IsCorrect())
             {
                 Done = true;
                 Close();
             }
+        }
+
+        private void Registration_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
         }
     }
 }
