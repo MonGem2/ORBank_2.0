@@ -45,10 +45,6 @@ namespace ORBank_2._0
                 metroTextBox10.Visible = true;
                 dataGridView1.Visible = false;
             }
-            if (metroTabControl1.SelectedTab != metroTabPage3)
-            {
-                metroTextBox9.Visible = true;
-            }
             if (metroTabControl1.SelectedTab != metroTabPage5)
             {
                 metroTextBox11.Visible = true;
@@ -208,19 +204,6 @@ namespace ORBank_2._0
                 metroTextBox10.Clear();
                 dataGridView1.Visible = true;
                 dataGridView1.DataSource = Users[Index].Deposits;
-            }
-        }
-
-        private void MetroTextBox9_TextChanged(object sender, EventArgs e)
-        {
-            if (metroTextBox9.Text == Users[Index].PINcode)
-            {
-                metroTextBox9.Visible = false;
-                metroTextBox9.Clear();
-                dataGridView2.Visible = true;
-                dataGridView2.DataSource = Users[Index].Credits;
-                metroButton11.Visible = true;
-                metroButton9.Visible = true;
             }
         }
 

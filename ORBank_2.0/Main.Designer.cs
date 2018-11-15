@@ -576,7 +576,7 @@
             this.metroTextBox13.Multiline = true;
             this.metroTextBox13.Name = "metroTextBox13";
             this.metroTextBox13.PasswordChar = '*';
-            this.metroTextBox13.PromptText = "Input your PIN";
+            this.metroTextBox13.WaterMark = "Input your PIN";
             this.metroTextBox13.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox13.SelectedText = "";
             this.metroTextBox13.SelectionLength = 0;
@@ -705,7 +705,7 @@
             this.metroTextBox10.Multiline = true;
             this.metroTextBox10.Name = "metroTextBox10";
             this.metroTextBox10.PasswordChar = '*';
-            this.metroTextBox10.PromptText = "Input your PIN";
+            this.metroTextBox10.WaterMark = "Input your PIN";
             this.metroTextBox10.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox10.SelectedText = "";
             this.metroTextBox10.SelectionLength = 0;
@@ -784,7 +784,7 @@
             this.metroTextBox7.Multiline = true;
             this.metroTextBox7.Name = "metroTextBox7";
             this.metroTextBox7.PasswordChar = '*';
-            this.metroTextBox7.PromptText = "Input your PIN";
+            this.metroTextBox7.WaterMark = "Input your PIN";
             this.metroTextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox7.SelectedText = "";
             this.metroTextBox7.SelectionLength = 0;
@@ -890,7 +890,7 @@
             this.metroTextBox11.Multiline = true;
             this.metroTextBox11.Name = "metroTextBox11";
             this.metroTextBox11.PasswordChar = '*';
-            this.metroTextBox11.PromptText = "Input your PIN";
+            this.metroTextBox11.WaterMark = "Input your PIN";
             this.metroTextBox11.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox11.SelectedText = "";
             this.metroTextBox11.SelectionLength = 0;
@@ -954,7 +954,7 @@
             this.metroTextBox12.Multiline = true;
             this.metroTextBox12.Name = "metroTextBox12";
             this.metroTextBox12.PasswordChar = '*';
-            this.metroTextBox12.PromptText = "Input your PIN";
+            this.metroTextBox12.WaterMark = "Input your PIN";
             this.metroTextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox12.SelectedText = "";
             this.metroTextBox12.SelectionLength = 0;
