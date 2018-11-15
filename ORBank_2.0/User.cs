@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,20 @@ namespace ORBank_2._0
     [Serializable]
     public class User
     {
+        public void Print()
+        {
+            System.Windows.Forms.MessageBox.Show("Name:    "+Name+
+                "\nSurname:      "+SurName+
+                "\nLogin:        "+LogIn+
+                "\nPassword:     "+Password+
+                "\nCard:         "+CardNum+
+                "\nPhone number: "+Phone_Number
+                );
+
+
+        }
+        public bool Banned { get; set; } = false;
+
         public string Name { get; set; }
 
         public string SurName { get; set; }
@@ -25,6 +40,10 @@ namespace ORBank_2._0
 
         public string Phone_Number { get; set; }
 
+        public Deposits Deposits { get; set; } = new Deposits();
+
+        public Credits Credits { get; set; } = new Credits();
+
         public static User Create(Int64 UsersNum,Users users)
         {
             User newUser = null;
@@ -37,5 +56,17 @@ namespace ORBank_2._0
 
             return newUser;
         }
+
+    }
+    [Serializable]
+    public class Deposits : BindingList<Deposit>
+    {
+
+    }
+
+    [Serializable]
+    public class Credits : BindingList<Credit>
+    {
+
     }
 }

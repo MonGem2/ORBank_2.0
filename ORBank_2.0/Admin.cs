@@ -14,6 +14,8 @@ namespace ORBank_2._0
     public partial class Admin : Form
     {
         public Users Users { get; set; } = new Users();
+        public decimal Sum { get; set; } = 0;
+
         public Admin()
         {
             InitializeComponent();
@@ -52,8 +54,36 @@ namespace ORBank_2._0
             int i = 0;
             try
             {
+                
                 i = dataGridView1.Rows.IndexOf(dataGridView1.SelectedRows[0]);
+                Sum += Users[i].wallet.Moneys;
                 Users.RemoveAt(i);
+                UpdateDataGrid();
+            }
+            catch
+            { }
+        }
+
+        private void MetroButton4_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            try
+            {
+                i = dataGridView1.Rows.IndexOf(dataGridView1.SelectedRows[0]);
+                Users[i].Banned = true;
+                UpdateDataGrid();
+            }
+            catch
+            { }
+        }
+
+        private void MetroButton5_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            try
+            {
+                i = dataGridView1.Rows.IndexOf(dataGridView1.SelectedRows[0]);
+                Users[i].Banned = false;
                 UpdateDataGrid();
             }
             catch

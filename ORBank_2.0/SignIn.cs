@@ -65,6 +65,7 @@ namespace ORBank_2._0
                 metroTextBox2.Text = "";
                 form.ShowDialog(this);
                 bank.Users = form.Users;
+                bank.Bank_Moneys.Refill(form.Sum);
                 Bank_Serialize();
                 Visible = true;
             }
@@ -73,7 +74,12 @@ namespace ORBank_2._0
                 User tmp;
                 try
                 {
-                    if ((tmp = bank.Users.Where(a => a.LogIn == metroTextBox1.Text).First()) == null)
+                    if ((tmp = bank.Users.Where(a => a.LogIn == metroTextBox1.Text).First()).Banned)
+                    {
+                        errorProvider1.Clear();
+                        errorProvider1.SetError(metroTextBox1, "Sorry but you are baned");
+                    }
+                    else if ((tmp = bank.Users.Where(a => a.LogIn == metroTextBox1.Text).First()) == null)
                     {
                         errorProvider1.Clear();
                         errorProvider1.SetError(metroTextBox1, "This user not exist");
@@ -116,6 +122,11 @@ namespace ORBank_2._0
                 }
             }
             Visible = true;
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            new Forgot(bank.Users).ShowDialog();
         }
     }
 }

@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 namespace ORBank_2._0
 {
     [Serializable]
-    public class Deposit
+    public class Credit
     {
         public double Sum { get; set; }
         DateTime Createtime { get; set; }
         public float Percent { get; set; }
-        public int Min_Days_For_Take { get; set; }
+        public int Max_Days_For_Take { get; set; }
 
-        public Deposit(double newsum)
+        public Credit(double newsum)
         {
             Createtime = DateTime.Today;
             Percent = 3;
@@ -23,14 +23,14 @@ namespace ORBank_2._0
         public double GetSum()
         {
             int daysnum = (DateTime.Now - Createtime).Days;
-            if (daysnum < Min_Days_For_Take)
-            {
-                return 0;
-            }
             double NewS = Sum;
             for (int i = 0; i < daysnum; i++)
             {
                 NewS += (NewS / 100) * Percent;
+                if (i > Max_Days_For_Take)
+                {
+                    Percent *= 2;
+                }
             }
 
             return NewS;
@@ -39,6 +39,5 @@ namespace ORBank_2._0
         {
             return Sum;
         }
-
     }
 }

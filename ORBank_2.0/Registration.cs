@@ -115,10 +115,5 @@ namespace ORBank_2._0
                 Close();
             }
         }
-
-        private void Registration_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
     }
 }

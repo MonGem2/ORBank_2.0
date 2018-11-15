@@ -31,12 +31,11 @@ namespace ORBank_2._0
             Index = index;
             metroTabControl1.SelectedIndex = 0;
             UpdateForm();
+            toolStripStatusLabel5.Text = "Users count: " + Users.Count.ToString();
         }
 
         void ChangeTabUpdate(object sender, TabControlEventArgs e)
         {
-            var tmp=Parent as Login;
-
             if (metroTabControl1.SelectedTab != metroTabPage4)
             {
                 metroTextBox7.Visible = true;
@@ -44,6 +43,7 @@ namespace ORBank_2._0
             if (metroTabControl1.SelectedTab != metroTabPage2)
             {
                 metroTextBox10.Visible = true;
+                dataGridView1.Visible = false;
             }
             if (metroTabControl1.SelectedTab != metroTabPage3)
             {
@@ -179,7 +179,7 @@ namespace ORBank_2._0
             return false;
         }
 
-        private void metroButton5_Click(object sender, EventArgs e)
+        private void MetroButton5_Click(object sender, EventArgs e)
         {
             if (IsCorrect())
             {
@@ -200,25 +200,31 @@ namespace ORBank_2._0
             }
         }
 
-        private void metroTextBox10_TextChanged(object sender, EventArgs e)
+        private void MetroTextBox10_TextChanged(object sender, EventArgs e)
         {
             if (metroTextBox10.Text == Users[Index].PINcode)
             {
                 metroTextBox10.Visible = false;
                 metroTextBox10.Clear();
+                dataGridView1.Visible = true;
+                dataGridView1.DataSource = Users[Index].Deposits;
             }
         }
 
-        private void metroTextBox9_TextChanged(object sender, EventArgs e)
+        private void MetroTextBox9_TextChanged(object sender, EventArgs e)
         {
             if (metroTextBox9.Text == Users[Index].PINcode)
             {
                 metroTextBox9.Visible = false;
                 metroTextBox9.Clear();
+                dataGridView2.Visible = true;
+                dataGridView2.DataSource = Users[Index].Credits;
+                metroButton11.Visible = true;
+                metroButton9.Visible = true;
             }
         }
 
-        private void metroTextBox11_TextChanged(object sender, EventArgs e)
+        private void MetroTextBox11_TextChanged(object sender, EventArgs e)
         {
             if (metroTextBox11.Text == Users[Index].PINcode)
             {
@@ -227,7 +233,7 @@ namespace ORBank_2._0
             }
         }
 
-        private void metroTextBox12_TextChanged(object sender, EventArgs e)
+        private void MetroTextBox12_TextChanged(object sender, EventArgs e)
         {
             if (metroTextBox12.Text == Users[Index].PINcode)
             {
@@ -236,7 +242,7 @@ namespace ORBank_2._0
             }
         }
 
-        private void metroButton7_Click(object sender, EventArgs e)
+        private void MetroButton7_Click(object sender, EventArgs e)
         {
             metroTextBox13.Visible = true;
             metroTextBox13.Enabled = false;
@@ -251,7 +257,7 @@ namespace ORBank_2._0
             metroButton7.Visible = false;
         }
 
-        private void metroButton3_Click(object sender, EventArgs e)
+        private void MetroButton3_Click(object sender, EventArgs e)
         {
             try
             {
@@ -265,7 +271,7 @@ namespace ORBank_2._0
                     errorProvider1.Clear();
                     Users.Add(new User());
                     Users.RemoveAt(Users.Count - 1);
-
+                    saveFileDialog1.FileName = "temp";
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
                         using (FileStream fs = new FileStream(saveFileDialog1.FileName + ".ref", FileMode.Create, FileAccess.Write))
@@ -288,7 +294,7 @@ namespace ORBank_2._0
             UpdateForm();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void MetroButton2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -332,7 +338,7 @@ namespace ORBank_2._0
             }
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void MetroButton1_Click(object sender, EventArgs e)
         {
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -360,7 +366,7 @@ namespace ORBank_2._0
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = DateTime.Now.ToLongTimeString();
             toolStripStatusLabel4.Text = DateTime.Now.ToShortDateString();
@@ -369,6 +375,15 @@ namespace ORBank_2._0
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             timer1.Stop();
+        }
+
+        private void MetroButton8_Click_1(object sender, EventArgs e)
+        {
+            var tmp = Users[Index];
+            CreateDeposit createDeposit = new CreateDeposit(ref tmp);
+            Users[Index] = tmp;
+            createDeposit.ShowDialog();
+            dataGridView1.DataSource = Users[Index].Deposits;
         }
     }
 }

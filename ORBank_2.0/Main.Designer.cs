@@ -51,15 +51,24 @@
             this.metroTextBox13 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Min_Days_For_Take = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.percentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depositBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroTextBox10 = new MetroFramework.Controls.MetroTextBox();
+            this.metroButton8 = new MetroFramework.Controls.MetroButton();
+            this.metroButton10 = new MetroFramework.Controls.MetroButton();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTextBox9 = new MetroFramework.Controls.MetroTextBox();
+            this.metroButton11 = new MetroFramework.Controls.MetroButton();
+            this.metroButton9 = new MetroFramework.Controls.MetroButton();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.sumDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.percentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maxDaysForTakeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.creditBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.metroTextBox7 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
@@ -75,8 +84,17 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -89,20 +107,25 @@
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.statusStrip2.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depositBindingSource)).BeginInit();
             this.metroTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.creditBindingSource)).BeginInit();
             this.metroTabPage4.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
             this.metroTabPage6.SuspendLayout();
             this.metroTabPage7.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.statusStrip2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,6 +134,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -125,7 +149,7 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(886, 252);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
@@ -134,6 +158,7 @@
             // metroTabPage1
             // 
             this.metroTabPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.metroTabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage1.Controls.Add(this.tableLayoutPanel4);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
@@ -160,17 +185,14 @@
             this.tableLayoutPanel4.Controls.Add(this.metroTextBox13, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.metroButton6, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.metroButton5, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.statusStrip1, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.statusStrip2, 0, 2);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(878, 210);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(874, 206);
             this.tableLayoutPanel4.TabIndex = 24;
             // 
             // tableLayoutPanel3
@@ -204,7 +226,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66555F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66555F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66555F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(419, 186);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(419, 189);
             this.tableLayoutPanel3.TabIndex = 23;
             // 
             // metroLabel6
@@ -281,7 +303,7 @@
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel3.Location = new System.Drawing.Point(3, 62);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(124, 30);
+            this.metroLabel3.Size = new System.Drawing.Size(124, 31);
             this.metroLabel3.TabIndex = 17;
             this.metroLabel3.Text = "Login";
             this.metroLabel3.UseCustomBackColor = true;
@@ -295,9 +317,9 @@
             // 
             // 
             this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(232, 2);
+            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(230, 1);
             this.metroTextBox3.CustomButton.Name = "";
-            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox3.CustomButton.TabIndex = 1;
             this.metroTextBox3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -315,7 +337,7 @@
             this.metroTextBox3.SelectionLength = 0;
             this.metroTextBox3.SelectionStart = 0;
             this.metroTextBox3.ShortcutsEnabled = true;
-            this.metroTextBox3.Size = new System.Drawing.Size(254, 24);
+            this.metroTextBox3.Size = new System.Drawing.Size(254, 25);
             this.metroTextBox3.TabIndex = 12;
             this.metroTextBox3.UseCustomBackColor = true;
             this.metroTextBox3.UseCustomForeColor = true;
@@ -330,9 +352,9 @@
             this.metroLabel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.Location = new System.Drawing.Point(3, 92);
+            this.metroLabel4.Location = new System.Drawing.Point(3, 93);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(124, 30);
+            this.metroLabel4.Size = new System.Drawing.Size(124, 31);
             this.metroLabel4.TabIndex = 18;
             this.metroLabel4.Text = "Password";
             this.metroLabel4.UseCustomBackColor = true;
@@ -346,9 +368,9 @@
             // 
             // 
             this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(232, 2);
+            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(230, 1);
             this.metroTextBox4.CustomButton.Name = "";
-            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox4.CustomButton.TabIndex = 1;
             this.metroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -356,7 +378,7 @@
             this.metroTextBox4.CustomButton.Visible = false;
             this.metroTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox4.Lines = new string[0];
-            this.metroTextBox4.Location = new System.Drawing.Point(133, 95);
+            this.metroTextBox4.Location = new System.Drawing.Point(133, 96);
             this.metroTextBox4.MaxLength = 32767;
             this.metroTextBox4.Name = "metroTextBox4";
             this.metroTextBox4.PasswordChar = '●';
@@ -366,7 +388,7 @@
             this.metroTextBox4.SelectionLength = 0;
             this.metroTextBox4.SelectionStart = 0;
             this.metroTextBox4.ShortcutsEnabled = true;
-            this.metroTextBox4.Size = new System.Drawing.Size(254, 24);
+            this.metroTextBox4.Size = new System.Drawing.Size(254, 25);
             this.metroTextBox4.TabIndex = 13;
             this.metroTextBox4.UseCustomBackColor = true;
             this.metroTextBox4.UseCustomForeColor = true;
@@ -419,9 +441,9 @@
             // 
             // 
             this.metroTextBox5.CustomButton.Image = null;
-            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(232, 2);
+            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(230, 1);
             this.metroTextBox5.CustomButton.Name = "";
-            this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(19, 19);
+            this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.metroTextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox5.CustomButton.TabIndex = 1;
             this.metroTextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -429,7 +451,7 @@
             this.metroTextBox5.CustomButton.Visible = false;
             this.metroTextBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(133, 125);
+            this.metroTextBox5.Location = new System.Drawing.Point(133, 127);
             this.metroTextBox5.MaxLength = 32767;
             this.metroTextBox5.Name = "metroTextBox5";
             this.metroTextBox5.PasswordChar = '\0';
@@ -439,7 +461,7 @@
             this.metroTextBox5.SelectionLength = 0;
             this.metroTextBox5.SelectionStart = 0;
             this.metroTextBox5.ShortcutsEnabled = true;
-            this.metroTextBox5.Size = new System.Drawing.Size(254, 24);
+            this.metroTextBox5.Size = new System.Drawing.Size(254, 25);
             this.metroTextBox5.TabIndex = 14;
             this.metroTextBox5.UseCustomBackColor = true;
             this.metroTextBox5.UseCustomForeColor = true;
@@ -454,9 +476,9 @@
             this.metroLabel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel5.Location = new System.Drawing.Point(3, 122);
+            this.metroLabel5.Location = new System.Drawing.Point(3, 124);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(124, 30);
+            this.metroLabel5.Size = new System.Drawing.Size(124, 31);
             this.metroLabel5.TabIndex = 19;
             this.metroLabel5.Text = "Phone number";
             this.metroLabel5.UseCustomBackColor = true;
@@ -480,7 +502,7 @@
             this.metroTextBox8.CustomButton.Visible = false;
             this.metroTextBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox8.Lines = new string[0];
-            this.metroTextBox8.Location = new System.Drawing.Point(133, 155);
+            this.metroTextBox8.Location = new System.Drawing.Point(133, 158);
             this.metroTextBox8.MaxLength = 32767;
             this.metroTextBox8.Name = "metroTextBox8";
             this.metroTextBox8.PasswordChar = '\0';
@@ -503,7 +525,7 @@
             // 
             this.metroButton4.BackgroundImage = global::ORBank_2._0.Properties.Resources.Pass;
             this.metroButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroButton4.Location = new System.Drawing.Point(393, 95);
+            this.metroButton4.Location = new System.Drawing.Point(393, 96);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(23, 20);
             this.metroButton4.TabIndex = 20;
@@ -516,7 +538,7 @@
             this.metroLabel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel7.Location = new System.Drawing.Point(3, 152);
+            this.metroLabel7.Location = new System.Drawing.Point(3, 155);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(124, 34);
             this.metroLabel7.TabIndex = 22;
@@ -530,9 +552,9 @@
             this.metroButton7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton7.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton7.Location = new System.Drawing.Point(629, 3);
+            this.metroButton7.Location = new System.Drawing.Point(625, 3);
             this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(246, 141);
+            this.metroButton7.Size = new System.Drawing.Size(246, 135);
             this.metroButton7.TabIndex = 26;
             this.metroButton7.Text = "Cancel";
             this.metroButton7.UseCustomBackColor = true;
@@ -540,7 +562,7 @@
             this.metroButton7.UseSelectable = true;
             this.metroButton7.UseStyleColors = true;
             this.metroButton7.Visible = false;
-            this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
+            this.metroButton7.Click += new System.EventHandler(this.MetroButton7_Click);
             // 
             // metroTextBox13
             // 
@@ -549,30 +571,30 @@
             // 
             // 
             this.metroTextBox13.CustomButton.Image = null;
-            this.metroTextBox13.CustomButton.Location = new System.Drawing.Point(187, 2);
+            this.metroTextBox13.CustomButton.Location = new System.Drawing.Point(145, 2);
             this.metroTextBox13.CustomButton.Name = "";
-            this.metroTextBox13.CustomButton.Size = new System.Drawing.Size(5, 5);
+            this.metroTextBox13.CustomButton.Size = new System.Drawing.Size(43, 43);
             this.metroTextBox13.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTextBox13.CustomButton.TabIndex = 1;
             this.metroTextBox13.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox13.CustomButton.UseSelectable = true;
             this.metroTextBox13.CustomButton.Visible = false;
-            this.metroTextBox13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.metroTextBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTextBox13.Enabled = false;
             this.metroTextBox13.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox13.Lines = new string[0];
-            this.metroTextBox13.Location = new System.Drawing.Point(428, 179);
+            this.metroTextBox13.Location = new System.Drawing.Point(428, 144);
             this.metroTextBox13.MaxLength = 32767;
             this.metroTextBox13.Multiline = true;
             this.metroTextBox13.Name = "metroTextBox13";
             this.metroTextBox13.PasswordChar = '*';
-            this.metroTextBox13.PromptText = "Input your PIN";
+            this.metroTextBox13.WaterMark = "Input your PIN";
             this.metroTextBox13.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox13.SelectedText = "";
             this.metroTextBox13.SelectionLength = 0;
             this.metroTextBox13.SelectionStart = 0;
             this.metroTextBox13.ShortcutsEnabled = true;
-            this.metroTextBox13.Size = new System.Drawing.Size(195, 10);
+            this.metroTextBox13.Size = new System.Drawing.Size(191, 48);
             this.metroTextBox13.TabIndex = 6;
             this.metroTextBox13.UseSelectable = true;
             this.metroTextBox13.WaterMark = "Input your PIN";
@@ -586,7 +608,7 @@
             this.metroButton6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton6.Location = new System.Drawing.Point(428, 3);
             this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(77, 141);
+            this.metroButton6.Size = new System.Drawing.Size(73, 135);
             this.metroButton6.TabIndex = 24;
             this.metroButton6.Text = "Change";
             this.metroButton6.UseCustomBackColor = true;
@@ -600,9 +622,9 @@
             this.metroButton5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButton5.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton5.Location = new System.Drawing.Point(511, 3);
+            this.metroButton5.Location = new System.Drawing.Point(507, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(112, 141);
+            this.metroButton5.Size = new System.Drawing.Size(112, 135);
             this.metroButton5.TabIndex = 25;
             this.metroButton5.Text = "OK";
             this.metroButton5.UseCustomBackColor = true;
@@ -610,55 +632,15 @@
             this.metroButton5.UseSelectable = true;
             this.metroButton5.UseStyleColors = true;
             this.metroButton5.Visible = false;
-            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
-            // 
-            // statusStrip1
-            // 
-            this.tableLayoutPanel4.SetColumnSpan(this.statusStrip1, 3);
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel4});
-            this.statusStrip1.Location = new System.Drawing.Point(425, 192);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusStrip1.Size = new System.Drawing.Size(453, 18);
-            this.statusStrip1.SizingGrip = false;
-            this.statusStrip1.TabIndex = 27;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 13);
-            // 
-            // statusStrip2
-            // 
-            this.statusStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel3});
-            this.statusStrip2.Location = new System.Drawing.Point(0, 192);
-            this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Size = new System.Drawing.Size(425, 18);
-            this.statusStrip2.SizingGrip = false;
-            this.statusStrip2.TabIndex = 28;
-            this.statusStrip2.Text = "statusStrip2";
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 13);
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(0, 13);
+            this.metroButton5.Click += new System.EventHandler(this.MetroButton5_Click);
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.metroTabPage2.Controls.Add(this.dataGridView1);
             this.metroTabPage2.Controls.Add(this.metroTextBox10);
+            this.metroTabPage2.Controls.Add(this.metroButton8);
+            this.metroTabPage2.Controls.Add(this.metroButton10);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 10;
@@ -670,6 +652,49 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sumDataGridViewTextBoxColumn,
+            this.Min_Days_For_Take,
+            this.percentDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.depositBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(334, 1);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(536, 190);
+            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.Visible = false;
+            // 
+            // sumDataGridViewTextBoxColumn
+            // 
+            this.sumDataGridViewTextBoxColumn.DataPropertyName = "Sum";
+            this.sumDataGridViewTextBoxColumn.HeaderText = "Sum";
+            this.sumDataGridViewTextBoxColumn.Name = "sumDataGridViewTextBoxColumn";
+            this.sumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Min_Days_For_Take
+            // 
+            this.Min_Days_For_Take.DataPropertyName = "Min_Days_For_Take";
+            this.Min_Days_For_Take.HeaderText = "Days to close";
+            this.Min_Days_For_Take.Name = "Min_Days_For_Take";
+            this.Min_Days_For_Take.ReadOnly = true;
+            // 
+            // percentDataGridViewTextBoxColumn
+            // 
+            this.percentDataGridViewTextBoxColumn.DataPropertyName = "Percent";
+            this.percentDataGridViewTextBoxColumn.HeaderText = "Percent";
+            this.percentDataGridViewTextBoxColumn.Name = "percentDataGridViewTextBoxColumn";
+            this.percentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // depositBindingSource
+            // 
+            this.depositBindingSource.DataSource = typeof(ORBank_2._0.Deposit);
             // 
             // metroTextBox10
             // 
@@ -687,12 +712,12 @@
             this.metroTextBox10.CustomButton.Visible = false;
             this.metroTextBox10.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox10.Lines = new string[0];
-            this.metroTextBox10.Location = new System.Drawing.Point(0, 0);
+            this.metroTextBox10.Location = new System.Drawing.Point(-2, -2);
             this.metroTextBox10.MaxLength = 32767;
             this.metroTextBox10.Multiline = true;
             this.metroTextBox10.Name = "metroTextBox10";
             this.metroTextBox10.PasswordChar = '*';
-            this.metroTextBox10.PromptText = "Input your PIN";
+            this.metroTextBox10.WaterMark = "Input your PIN";
             this.metroTextBox10.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox10.SelectedText = "";
             this.metroTextBox10.SelectionLength = 0;
@@ -704,11 +729,36 @@
             this.metroTextBox10.WaterMark = "Input your PIN";
             this.metroTextBox10.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox10.WaterMarkFont = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox10.TextChanged += new System.EventHandler(this.metroTextBox10_TextChanged);
+            this.metroTextBox10.TextChanged += new System.EventHandler(this.MetroTextBox10_TextChanged);
+            // 
+            // metroButton8
+            // 
+            this.metroButton8.Location = new System.Drawing.Point(3, 3);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.Size = new System.Drawing.Size(148, 70);
+            this.metroButton8.TabIndex = 7;
+            this.metroButton8.TabStop = false;
+            this.metroButton8.Text = "Create deposit";
+            this.metroButton8.UseSelectable = true;
+            this.metroButton8.Click += new System.EventHandler(this.MetroButton8_Click_1);
+            // 
+            // metroButton10
+            // 
+            this.metroButton10.Location = new System.Drawing.Point(3, 91);
+            this.metroButton10.Name = "metroButton10";
+            this.metroButton10.Size = new System.Drawing.Size(148, 75);
+            this.metroButton10.TabIndex = 10;
+            this.metroButton10.TabStop = false;
+            this.metroButton10.Text = "Take deposit";
+            this.metroButton10.UseSelectable = true;
             // 
             // metroTabPage3
             // 
+            this.metroTabPage3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage3.Controls.Add(this.metroTextBox9);
+            this.metroTabPage3.Controls.Add(this.metroButton11);
+            this.metroTabPage3.Controls.Add(this.metroButton9);
+            this.metroTabPage3.Controls.Add(this.dataGridView2);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 10;
@@ -717,12 +767,14 @@
             this.metroTabPage3.Size = new System.Drawing.Size(878, 210);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Credit";
+            this.metroTabPage3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
             // metroTextBox9
             // 
+            this.metroTextBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             // 
             // 
             // 
@@ -735,14 +787,15 @@
             this.metroTextBox9.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox9.CustomButton.UseSelectable = true;
             this.metroTextBox9.CustomButton.Visible = false;
+            this.metroTextBox9.Enabled = false;
             this.metroTextBox9.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox9.Lines = new string[0];
-            this.metroTextBox9.Location = new System.Drawing.Point(0, 0);
+            this.metroTextBox9.Location = new System.Drawing.Point(-2, -2);
             this.metroTextBox9.MaxLength = 32767;
             this.metroTextBox9.Multiline = true;
             this.metroTextBox9.Name = "metroTextBox9";
             this.metroTextBox9.PasswordChar = '*';
-            this.metroTextBox9.PromptText = "Input your PIN";
+            this.metroTextBox9.WaterMark = "Input your PIN";
             this.metroTextBox9.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox9.SelectedText = "";
             this.metroTextBox9.SelectionLength = 0;
@@ -750,14 +803,76 @@
             this.metroTextBox9.ShortcutsEnabled = true;
             this.metroTextBox9.Size = new System.Drawing.Size(330, 180);
             this.metroTextBox9.TabIndex = 6;
+            this.metroTextBox9.UseCustomBackColor = true;
+            this.metroTextBox9.UseCustomForeColor = true;
             this.metroTextBox9.UseSelectable = true;
+            this.metroTextBox9.UseStyleColors = true;
             this.metroTextBox9.WaterMark = "Input your PIN";
             this.metroTextBox9.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox9.WaterMarkFont = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox9.TextChanged += new System.EventHandler(this.metroTextBox9_TextChanged);
+            this.metroTextBox9.TextChanged += new System.EventHandler(this.MetroTextBox9_TextChanged);
+            // 
+            // metroButton11
+            // 
+            this.metroButton11.Location = new System.Drawing.Point(4, 110);
+            this.metroButton11.Name = "metroButton11";
+            this.metroButton11.Size = new System.Drawing.Size(147, 78);
+            this.metroButton11.TabIndex = 9;
+            this.metroButton11.Text = "metroButton11";
+            this.metroButton11.UseSelectable = true;
+            this.metroButton11.Visible = false;
+            // 
+            // metroButton9
+            // 
+            this.metroButton9.Location = new System.Drawing.Point(4, 4);
+            this.metroButton9.Name = "metroButton9";
+            this.metroButton9.Size = new System.Drawing.Size(147, 100);
+            this.metroButton9.TabIndex = 8;
+            this.metroButton9.Text = "metroButton9";
+            this.metroButton9.UseSelectable = true;
+            this.metroButton9.Visible = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sumDataGridViewTextBoxColumn1,
+            this.percentDataGridViewTextBoxColumn1,
+            this.maxDaysForTakeDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.creditBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(334, -2);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(345, 174);
+            this.dataGridView2.TabIndex = 7;
+            this.dataGridView2.Visible = false;
+            // 
+            // sumDataGridViewTextBoxColumn1
+            // 
+            this.sumDataGridViewTextBoxColumn1.DataPropertyName = "Sum";
+            this.sumDataGridViewTextBoxColumn1.HeaderText = "Sum";
+            this.sumDataGridViewTextBoxColumn1.Name = "sumDataGridViewTextBoxColumn1";
+            // 
+            // percentDataGridViewTextBoxColumn1
+            // 
+            this.percentDataGridViewTextBoxColumn1.DataPropertyName = "Percent";
+            this.percentDataGridViewTextBoxColumn1.HeaderText = "Percent";
+            this.percentDataGridViewTextBoxColumn1.Name = "percentDataGridViewTextBoxColumn1";
+            // 
+            // maxDaysForTakeDataGridViewTextBoxColumn
+            // 
+            this.maxDaysForTakeDataGridViewTextBoxColumn.DataPropertyName = "Max_Days_For_Take";
+            this.maxDaysForTakeDataGridViewTextBoxColumn.HeaderText = "Max_Days_For_Take";
+            this.maxDaysForTakeDataGridViewTextBoxColumn.Name = "maxDaysForTakeDataGridViewTextBoxColumn";
+            // 
+            // creditBindingSource
+            // 
+            this.creditBindingSource.DataSource = typeof(ORBank_2._0.Credit);
             // 
             // metroTabPage4
             // 
+            this.metroTabPage4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage4.Controls.Add(this.metroTextBox7);
             this.metroTabPage4.Controls.Add(this.metroButton3);
             this.metroTabPage4.Controls.Add(this.label3);
@@ -790,12 +905,12 @@
             this.metroTextBox7.CustomButton.Visible = false;
             this.metroTextBox7.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox7.Lines = new string[0];
-            this.metroTextBox7.Location = new System.Drawing.Point(0, 0);
+            this.metroTextBox7.Location = new System.Drawing.Point(-2, -2);
             this.metroTextBox7.MaxLength = 32767;
             this.metroTextBox7.Multiline = true;
             this.metroTextBox7.Name = "metroTextBox7";
             this.metroTextBox7.PasswordChar = '*';
-            this.metroTextBox7.PromptText = "Input your PIN";
+            this.metroTextBox7.WaterMark = "Input your PIN";
             this.metroTextBox7.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox7.SelectedText = "";
             this.metroTextBox7.SelectionLength = 0;
@@ -819,7 +934,7 @@
             this.metroButton3.TabStop = false;
             this.metroButton3.Text = "Save the receipt.";
             this.metroButton3.UseSelectable = true;
-            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            this.metroButton3.Click += new System.EventHandler(this.MetroButton3_Click);
             // 
             // label3
             // 
@@ -865,6 +980,7 @@
             // 
             // metroTabPage5
             // 
+            this.metroTabPage5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage5.Controls.Add(this.metroTextBox11);
             this.metroTabPage5.Controls.Add(this.metroButton2);
             this.metroTabPage5.HorizontalScrollbarBarColor = true;
@@ -895,12 +1011,12 @@
             this.metroTextBox11.CustomButton.Visible = false;
             this.metroTextBox11.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox11.Lines = new string[0];
-            this.metroTextBox11.Location = new System.Drawing.Point(0, 0);
+            this.metroTextBox11.Location = new System.Drawing.Point(-2, -2);
             this.metroTextBox11.MaxLength = 32767;
             this.metroTextBox11.Multiline = true;
             this.metroTextBox11.Name = "metroTextBox11";
             this.metroTextBox11.PasswordChar = '*';
-            this.metroTextBox11.PromptText = "Input your PIN";
+            this.metroTextBox11.WaterMark = "Input your PIN";
             this.metroTextBox11.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox11.SelectedText = "";
             this.metroTextBox11.SelectionLength = 0;
@@ -912,7 +1028,7 @@
             this.metroTextBox11.WaterMark = "Input your PIN";
             this.metroTextBox11.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox11.WaterMarkFont = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox11.TextChanged += new System.EventHandler(this.metroTextBox11_TextChanged);
+            this.metroTextBox11.TextChanged += new System.EventHandler(this.MetroTextBox11_TextChanged);
             // 
             // metroButton2
             // 
@@ -924,10 +1040,11 @@
             this.metroButton2.TabStop = false;
             this.metroButton2.Text = "Open the receipt.";
             this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            this.metroButton2.Click += new System.EventHandler(this.MetroButton2_Click);
             // 
             // metroTabPage6
             // 
+            this.metroTabPage6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage6.Controls.Add(this.metroTextBox12);
             this.metroTabPage6.Controls.Add(this.metroButton1);
             this.metroTabPage6.HorizontalScrollbarBarColor = true;
@@ -958,12 +1075,12 @@
             this.metroTextBox12.CustomButton.Visible = false;
             this.metroTextBox12.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox12.Lines = new string[0];
-            this.metroTextBox12.Location = new System.Drawing.Point(0, 0);
+            this.metroTextBox12.Location = new System.Drawing.Point(-2, -2);
             this.metroTextBox12.MaxLength = 32767;
             this.metroTextBox12.Multiline = true;
             this.metroTextBox12.Name = "metroTextBox12";
             this.metroTextBox12.PasswordChar = '*';
-            this.metroTextBox12.PromptText = "Input your PIN";
+            this.metroTextBox12.WaterMark = "Input your PIN";
             this.metroTextBox12.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox12.SelectedText = "";
             this.metroTextBox12.SelectionLength = 0;
@@ -975,7 +1092,7 @@
             this.metroTextBox12.WaterMark = "Input your PIN";
             this.metroTextBox12.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox12.WaterMarkFont = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.metroTextBox12.TextChanged += new System.EventHandler(this.metroTextBox12_TextChanged);
+            this.metroTextBox12.TextChanged += new System.EventHandler(this.MetroTextBox12_TextChanged);
             // 
             // metroButton1
             // 
@@ -987,10 +1104,11 @@
             this.metroButton1.TabStop = false;
             this.metroButton1.Text = "Open OR777";
             this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.metroButton1.Click += new System.EventHandler(this.MetroButton1_Click);
             // 
             // metroTabPage7
             // 
+            this.metroTabPage7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.metroTabPage7.Controls.Add(this.tableLayoutPanel5);
             this.metroTabPage7.HorizontalScrollbarBarColor = true;
             this.metroTabPage7.HorizontalScrollbarHighlightOnWheel = false;
@@ -1009,18 +1127,21 @@
             this.tableLayoutPanel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.7931F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.20689F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76.2069F));
             this.tableLayoutPanel5.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.metroLabel9, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.metroLabel8, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.metroLabel8, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label4, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.metroLabel10, 0, 2);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(878, 210);
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(874, 206);
             this.tableLayoutPanel5.TabIndex = 5;
             // 
             // label1
@@ -1028,9 +1149,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(211, 105);
+            this.label1.Location = new System.Drawing.Point(210, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(664, 105);
+            this.label1.Size = new System.Drawing.Size(661, 68);
             this.label1.TabIndex = 6;
             this.label1.Text = "You can not!!!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1041,12 +1162,24 @@
             this.metroLabel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel9.Location = new System.Drawing.Point(3, 105);
+            this.metroLabel9.Location = new System.Drawing.Point(3, 68);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(202, 105);
+            this.metroLabel9.Size = new System.Drawing.Size(201, 68);
             this.metroLabel9.TabIndex = 5;
             this.metroLabel9.Text = "Can I change my PIN?";
             this.metroLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(210, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(661, 68);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Or Bucks is a currency that is numerically equal to one US dollar.";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // metroLabel8
             // 
@@ -1056,22 +1189,96 @@
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel8.Location = new System.Drawing.Point(3, 0);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(202, 105);
+            this.metroLabel8.Size = new System.Drawing.Size(201, 68);
             this.metroLabel8.TabIndex = 4;
             this.metroLabel8.Text = "What is an ORBucks?";
             this.metroLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // label4
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(211, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(664, 105);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Or Bucks is a currency that is numerically equal to one US dollar.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(210, 136);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(661, 70);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "To play the casino, go to the Casino tab and save the user\'s file at the place yo" +
+    "u use it at the casino.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel10.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel10.Location = new System.Drawing.Point(3, 136);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(201, 70);
+            this.metroLabel10.TabIndex = 7;
+            this.metroLabel10.Text = "How to play casino?";
+            this.metroLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel4,
+            this.toolStripStatusLabel5});
+            this.statusStrip1.Location = new System.Drawing.Point(446, 0);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.statusStrip1.Size = new System.Drawing.Size(446, 21);
+            this.statusStrip1.SizingGrip = false;
+            this.statusStrip1.TabIndex = 27;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.Blue;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 0);
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.ForeColor = System.Drawing.Color.Blue;
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(0, 0);
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(0, 16);
+            // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3});
+            this.statusStrip2.Location = new System.Drawing.Point(0, 0);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(446, 21);
+            this.statusStrip2.SizingGrip = false;
+            this.statusStrip2.TabIndex = 28;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 16);
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(0, 16);
             // 
             // tableLayoutPanel1
             // 
@@ -1092,7 +1299,7 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(763, 0);
+            this.metroLabel1.Location = new System.Drawing.Point(746, 0);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(0, 31);
             this.metroLabel1.TabIndex = 4;
@@ -1102,7 +1309,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.94772F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.052288F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
             this.tableLayoutPanel2.Controls.Add(this.metroLabel1, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1118,7 +1325,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.pictureBox1.Image = global::ORBank_2._0.Properties.Resources.ZXv0;
             this.pictureBox1.InitialImage = global::ORBank_2._0.Properties.Resources.ZXv0;
-            this.pictureBox1.Location = new System.Drawing.Point(733, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(716, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1151,19 +1358,40 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // toolStripStatusLabel4
+            // tableLayoutPanel6
             // 
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(0, 13);
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.statusStrip2, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.statusStrip1, 1, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(20, 328);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(892, 21);
+            this.tableLayoutPanel6.TabIndex = 6;
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.Location = new System.Drawing.Point(505, 366);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(86, 19);
+            this.metroLabel11.TabIndex = 7;
+            this.metroLabel11.Text = "metroLabel11";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 369);
+            this.Controls.Add(this.metroLabel11);
+            this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1173,14 +1401,13 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.statusStrip2.ResumeLayout(false);
-            this.statusStrip2.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.depositBindingSource)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.creditBindingSource)).EndInit();
             this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage4.PerformLayout();
             this.metroTabPage5.ResumeLayout(false);
@@ -1188,6 +1415,10 @@
             this.metroTabPage7.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1197,7 +1428,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1263,5 +1497,24 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.Label label4;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private MetroFramework.Controls.MetroButton metroButton8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private MetroFramework.Controls.MetroButton metroButton10;
+        private System.Windows.Forms.BindingSource depositBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Min_Days_For_Take;
+        private System.Windows.Forms.DataGridViewTextBoxColumn percentDataGridViewTextBoxColumn;
+        private MetroFramework.Controls.MetroButton metroButton11;
+        private MetroFramework.Controls.MetroButton metroButton9;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sumDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn percentDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maxDaysForTakeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource creditBindingSource;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
     }
 }

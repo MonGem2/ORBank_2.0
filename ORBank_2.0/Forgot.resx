@@ -117,68 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Min_Days_For_Take.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="depositBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>726, 56</value>
-  </metadata>
-  <metadata name="creditBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>407, 56</value>
-  </metadata>
-  <metadata name="statusStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>523, 56</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="Error.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>157, 17</value>
-  </metadata>
-  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>667, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAD/tQD//7UA//+1AP8AAAAA/7UA//+1AP//tQD/AAAAAP+1AP8AAAAAAAAAAP+1AP8AAAAA/7UA/wAA
-        AAD/tQD//7UA/wAAAAD/tQD/AAAAAP+1AP8AAAAA/7UA/wAAAAD/tQD/AAAAAP+1AP//tQD/AAAAAP+1
-        AP8AAAAA/7UA//+1AP//tQD/AAAAAAAAAAD/tQD//7UA//+1AP8AAAAA/7UA//+1AP//tQD//7UA/wAA
-        AAD/tQD//7UA/wAAAAD/tQD/AAAAAP+1AP8AAAAAAAAAAAAAAAD/tQD/AAAAAP+1AP//tQD/AAAAAP+1
-        AP8AAAAA/7UA/wAAAAD/tQD//7UA//+1AP//tQD/AAAAAP+1AP//tQD//7UA/wAAAAD/tQD/AAAAAAAA
-        AAD/tQD/AAAAAP+1AP8AAAAA/7UA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
-        AP8AAAAAAAAAAAAAAAD//wD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAD//wD/AAAAAAAAAAD//wD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8A////AP///wD/AAAAAAAA
-        AAAAAAAA//8A/wAAAAD//wD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8A/wAAAAAAAAAAAAAAAP//
-        AP8AAAAAAAAAAP//AP///wD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AP8AAAAAAAAAAAAA
-        AAD//wD/AAAAAAAAAAD//wD/AAAAAP//AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wD/AAAAAAAA
-        AAAAAAAA//8A/wAAAAAAAAAA//8A/wAAAAAAAAAA//8A/wAAAAAAAAAAAAAAAAAAAAAAAAAA//8A/wAA
-        AAAAAAAAAAAAAP//AP8AAAAAAAAAAP//AP8AAAAAAAAAAP//AP8AAAAAAAAAAAAAAAAAAAAAAAAAAP//
-        AP8AAAAAAAAAAAAAAAD//wD/AAAAAAAAAAD//wD///8A////AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAD//wD/AAAAAAAAAAAAAAAA//8A/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAP//AP///wD///8A/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAEWoAAFVKAAAxCQAAXSoAABFqAAD/uwAA/7cAAOOvAADdnwAA3a8AAN23AADdtwAA3Y8AAN3/
-        AADj/wAA//8AAA==
-</value>
-  </data>
-  <metadata name="errorProvider2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>797, 17</value>
-  </metadata>
-  <metadata name="errorProvider3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="errorProvider4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>147, 56</value>
-  </metadata>
-  <metadata name="errorProvider5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>277, 56</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>639, 56</value>
   </metadata>
 </root>
